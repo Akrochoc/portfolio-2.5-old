@@ -1,0 +1,201 @@
+<!DOCTYPE>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title><!-- 
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+     <link rel="shortcut icon" href="../favicon.ico"> -->
+    <link rel="stylesheet" href="css/diapo.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="css/button.css">
+
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+	<body>
+		<div>
+			<ul class="diapo">
+			    <li>   
+			        <span>Image 01</span>
+			       	<div id="titleRealisations"><h3>Realisations</h3></div>
+			    </li>
+
+			    <li>
+			        <span>Image 02</span>
+			        <div id="titlePhotos"><h3>Photos</h3></div>
+			    </li>
+
+			    <li>
+			        <span>Image 03</span>
+			        <div id="titleAudiovisuel"><h3>Audio-visual</h3></div>
+			    </li>
+
+			    <li>
+			        <span>Image 04</span>
+			        <div id="titleJV"><h3>Video Games</h3></div>
+			    </li>
+			</ul>
+		</div>
+
+		<div class="one" onclick="page()">
+			<div class="button-wrap">
+				<div class="button-bg">
+					    <div class="button-out">EN</div>
+					    <div class="button-in">FR</div>
+					<div class="button-switch"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id=retour onclick="retour()"></div>
+		<div id=block>
+				<div class="case" id="c1" onclick="scale(this)">
+					<h1>Profil</h1>
+					<div id="photoProfil"><img src="photopp.png"></div>
+							<p id="textProfil">My name is Dorian and I'm 18. I'm Currently studying DUT MMI (Multimedia and Internet Professions) at the University of Rouen. Above all passionate about video games, I developped my attraction for the photo and audio-visual throughout my training. On my website, you can discover me through different sections and for any question, do not hesitate to contact me!</p>
+				</div>
+
+				<div class="case" id="c2" onclick="scale(this)">
+					<h1>Infographics</h1>
+
+					<div class="container">
+						<div><a href="imagesInfographie/1.jpg" target="_blank"><img src="imagesInfographie/1.jpg" alt="Web en MMI"></a></div>
+						<div><a href="imagesInfographie/2.png" target="_blank"><img src="imagesInfographie/2.png" alt="MemeMag"></a></div>
+						<div><a href="imagesInfographie/3.png" target="_blank"><img src="imagesInfographie/3.png" alt="SamyX, le déodorant le plus chaud de ta région"></a></div>
+						<div><a href="imagesInfographie/4.jpg" target="_blank"><img src="imagesInfographie/4.jpg" alt="Dessin graphique"></a></div>
+						<div><a href="imagesInfographie/5.png" target="_blank"><img src="imagesInfographie/5.png" alt="Mockup Archigraphic"></a></div>
+					</div> 
+				</div>
+
+				<div class="case" id="c3" onclick="scale(this)">
+					<h1>Photos</h1><div class="container">
+						<div><a href="imagesGalerie/1.png" target="_blank"><img src="imagesGalerie/1.png" alt=""></a></div>
+						<div><a href="imagesGalerie/2.png" target="_blank"><img src="imagesGalerie/2.png" alt=""></a></div>
+						<div><a href="imagesGalerie/3.png" target="_blank"><img src="imagesGalerie/3.png" alt=""></a></div>
+						<div><a href="imagesGalerie/4.png" target="_blank"><img src="imagesGalerie/4.png" alt=""></a></div>
+						<div><a href="imagesGalerie/5.png" target="_blank"><img src="imagesGalerie/5.png" alt=""></a></div>
+						<div><a href="imagesGalerie/6.png" target="_blank"><img src="imagesGalerie/6.png" alt=""></a></div>
+						<div><a href="imagesGalerie/7.png" target="_blank"><img src="imagesGalerie/7.png" alt=""></a></div>
+						<div><a href="imagesGalerie/8.png" target="_blank"><img src="imagesGalerie/8.png" alt=""></a></div><!-- 
+						<div><img src="imagesGalerie/9.jpg" alt=""></div>
+						<div><img src="imagesGalerie/10.jpg" alt=""></div> -->
+					</div>
+
+				</div>
+
+				<div class="case" id="c4" onclick="scale(this)">
+					<h1>Audio-visual</h1>
+					<div id="real">
+					<h2>Realisations</h2>
+
+					<div class="container">
+						<div id="real1">
+							<iframe src="https://youtu.be/HGcZBPjNLis"></iframe>
+						</div>
+						
+						<div id="real2">
+							<iframe src="https://www.youtube.com/watch?v=yAfS8sGcYAk"></iframe>
+						</div>
+						
+						<div id="real3">
+							<iframe src="https://www.youtube.com/watch?v=wylMwU1wEOM&list=RDLjxulQ1bEWg&index=27"></iframe>
+						</div>
+					</div>
+
+
+
+					</div>
+
+					<div id="recom">
+					<h2>Recommandations</h2>
+						<div class="owl-carousel owl-theme">
+    <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/23924346"></a></div>
+    <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/SHSHyzsNu1Ytube.com/watch?v=JpxsRwnRwCQ"></a></div>
+    <div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/SHSHyzsNu1Ytube.com/watch?v=FBu_jxT1PkA"></a></div>
+</div>
+					</div>
+
+		
+				</div>
+
+				<div class="case" id="c5" onclick="scale(this)">
+					<h1>Video games</h1>
+					<div id="textJV">
+						<p>My biggest passion and my future professional project is in the world of video games and level design in particular. The level designer, in the creation of video game, is the person who takes care of the realization of the levels. From platform games to open world or even serious games, I like all types of games but especially their mechanisms and their operations.</p>
+					</div>
+				</div>
+
+				<div class="caseShake" id="c6" onclick="shake(this)">
+					<h1><!-- Documentation / philo... --></h1>
+						<p class="line-1 anim-typewriter">Test animation typewriting</p>
+						<p class="line-2 anim-typewriter">Je ne cherche pas à connaître les réponses, je cherche à comprendre les questions. Confucius</p>
+						<p class="line-3 anim-typewriter">Je ne sais qu'une chose, c'est que je ne sais rien. Socrate</p>
+
+				</div>
+
+				<div class="case" id="c7" onclick="scale(this)" >
+					<h1>Skills</h1>
+
+
+					<div id="cvcss">
+						<a href="cv css/cv.html" target="_blank"><img src="cv.png" alt="CV"></a>
+					</div>
+						<!--<h2>Programmation</h2>
+							<h3>HTML</h3>
+							<h3>CSS</h3>
+							<h3>Javascript</h3>
+							<h3>HTML</h3>
+						<h2>Infographie</h2>
+							<h3>Photoshop</h3>
+							<h3>Illustrator</h3>
+						<h2>Audiovisuel</h2>
+							<h3>Premiere Pro</h3>
+							<h3>After Effects</h3> -->
+
+				</div>					
+
+				<div class="case" id="c8" onclick="scale(this)">
+					<h1>Resume & Contact</h1>
+
+					
+				
+					<div id="contactez">
+				<h2>Contact me on my <span id="mailspan">mail</span> or on <span id="facebookspan">Facebook</span> ! My <a href="CV CSS/cv.pdf">resume here</a> !</h2>
+					<div id="logos">
+						<div id="mail">
+							<a href="mailto:dorian.wib@gmail.com"><img src="Mail.png" alt="gmail"/></a>
+						</div>
+					
+						<div id="facebook">
+							<a href=https://www.facebook.com/dorian.wbt target="_blank"><img src="Facebook.png" alt="facebook"/></a>
+						</div>
+					</div>
+			</div>
+			</div>
+
+					<p id="contact"></p>
+				</div>
+		</div>
+
+
+
+
+	</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	if(typeof jQuery =='undefined'){
+		document.write('<scipt src="js/jquery.min.js"></\script>');
+	}
+</script>
+
+<script src="js/owl.carousel.js"></script><!-- Mettre Owl carousel après jQuery -->
+<!-- <script src="js/app.js"></script> UNDEFINED DANS LA CONSOLE-->
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/button.js"></script> 
+</html>

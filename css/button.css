@@ -1,0 +1,72 @@
+*, *:before, *:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* BUTTON 1 */
+.one, .button-wrap, .button-switch{
+  position: fixed;
+  z-index: 100;
+}
+.one .button-wrap{
+  width: 120px;
+  margin: 40px 0;
+  cursor: pointer;
+}
+.one .button-bg{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 3px;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.one .button-switch{
+  position: relative;
+  left: 0px;
+  width: 64px;
+  height: 44px;
+  border: solid 13px;
+  border-radius: 36px;
+  transition: all 0.2s ease;
+}
+.one .button-active .button-switch{
+  left: 50px;
+}
+.one .button-in,
+.one .button-out{
+  position: absolute;
+  transition: all 0.2s ease;
+  padding-top: 15px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.one .button-in{
+  margin-left: 76px;
+}
+.one .button-out{
+  margin-left: 18px;
+  color: cyan;
+}
+.one .button-active .button-out{
+  color: #fff;
+}
+.one .button-active .button-in{
+  color: cyan;
+}
+.one .button-active .button-bg{
+  background-color: #000;
+}
+.button-in a:link, .button-in a:visited, .button-in a:hover, .button-in a:active{
+  position: absolute;
+  transition: all 0.2s ease;
+  font-size: 1.3 em;
+  text-transform: uppercase;
+  font-weight: bold;
+}

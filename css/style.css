@@ -1,0 +1,453 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: 'calibri', sans-serif;
+	font-size: 15px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection{
+  background-color: none;
+  color: black;
+}
+
+::-moz-selection {
+  background-color: none;
+  color: black;
+}
+
+.case *{
+  position: absolute;
+  top:-99em;
+  text-align: center;
+}
+
+.case h1{
+  text-align: center;
+}
+
+#block h1{
+  margin: 1%;
+  padding: 0;
+  top:0;
+  text-align: center;
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+#block h2{
+  color: grey;
+  font-size: 30px;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+#block h3{
+  color: green;
+  font-size: 24px;
+}
+
+#block p{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	visibility: hidden;
+	word-wrap: break-word;
+}
+
+#langue{
+	position: fixed;
+	width:auto;
+	top: 10px;
+	left: 10px;
+	margin:0;
+	padding: 0;
+	font-size: 40px;
+  font-family: 'BebasNeueRegular';
+  src: url('fonts/BebasNeue-webfont.eot');
+	z-index: 100;
+}
+
+#fr, #en{
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+	color: black;
+	margin:0;
+	padding: 10px;
+	float:right;
+	text-decoration: none;
+}
+
+
+.case{
+background: rgba(200, 0, 0, 0.75);
+width: 250px;
+height: 250px;
+font-size: 24px;
+font-family: "calibry", sans-serif;
+color: white;
+text-align: center;
+box-shadow: 0 0 0 3px black inset;
+-webkit-transition: all 350ms ease-in-out;
+-webkit-transform: scale(1);
+z-index: 8;
+position: absolute;
+}
+
+.case:hover{
+background-color: rgba(200, 0, 0, 1);
+font-size: 25;
+font-family: "calibry", sans-serif;
+-webkit-transition: all 350ms ease-in-out;
+-webkit-transform: scale(1.1);
+box-shadow: none;
+}
+
+
+.activec1, .activec2, .activec3, .activec4, .activec5, .activec6, .activec7, .activec8{
+background: rgba(200, 0, 0, 1);
+width: 800px;
+height: 800px;
+font-family: "calibry", sans-serif;
+color: white;
+box-shadow:none;
+-webkit-transition: all 400ms ease-in-out;
+position: absolute;
+z-index: 15;
+font-size: 60px;
+overflow-y: auto;
+}
+
+#c1, #c2, #c3{
+	top: 50px;
+}
+#c4, #c5, #c6{
+	top: 325px;
+}
+#c7, #c8{
+	top: 600px;
+}
+#c1, #c4, #c7{
+	left: 580px;
+}
+#c2, #c5, #c8{
+	left: 855px;
+}
+#c3, #c6{
+	left: 1130px;
+}
+
+.activec2{
+-webkit-transform: translateX(-275px);
+}
+.activec3{
+-webkit-transform: translateX(-550px);
+}
+.activec4{
+-webkit-transform: translateY(-275px);
+}
+.activec5{
+-webkit-transform: translate(-275px,-275px);
+}
+.activec6{
+-webkit-transform: translate(-550px,-275px);
+}
+.activec7{
+-webkit-transform: translateY(-550px);
+}
+.activec8{
+-webkit-transform: translate(-275px,-550px);
+}
+
+#photoProfil{
+	margin: 1%;
+  width: 40%;
+  height: 40%;
+  float: left;
+}
+
+#photoProfil img{
+  width: 100%;
+  height: 100%;
+}
+
+#photoJV{
+  margin: 1%;
+  width: 45%;
+  height: 40%;
+  float: right;
+}
+
+#c1 p{
+	margin: 1%;
+  font-size: 30px;
+  line-height: 175%;
+  text-align: justify;
+}
+
+#retour{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -0;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.caroussel *{
+}
+
+.caroussel img{
+background: green;
+width: 100px;
+height: 100px;
+}
+
+.case .container{
+  display: none;
+}
+
+.container { 
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+
+.container div { 
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: 3px; 
+}
+
+.container div img { 
+  width: 100%; 
+  height: auto; 
+}
+@media screen and (max-width: 300px) {
+  .container div { margin: 0; }
+  .container { padding: 0; }
+}
+
+#c5 p{
+  margin: 1%;
+  font-size: 30px;
+  line-height: 175%;
+  text-align: justify;
+  visibility: visible;
+}
+
+#contactez h2{
+color: white;
+font-size: 26px;
+}
+
+#contactez a{
+  text-decoration: none;
+  color:white;
+}
+
+
+#mail{
+  float:left;
+  margin: 0 8%;
+}
+
+#logos{
+  width: 100%;
+  margin-top: 10%;
+}
+
+#cvcss img{
+  width: 100%;
+  height: au100%to;
+}
+
+
+
+
+
+
+.caseShake{
+background: rgba(200, 0, 0, 0.75);
+width: 250px;
+height: 250px;
+font-size: 25;
+font-family: "calibry", sans-serif;
+color: white;
+text-align: center;
+box-shadow: 0 0 0 3px black inset;
+z-index: 8;
+position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.caseShake:active{
+  -webkit-animation-name: caseShake;
+  animation-name: caseShake;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+
+-webkit-transition: all 1s ease-in-out;
+-webkit-transform: scale(1.1);
+
+}
+
+
+.caseShake:hover{
+background-color: rgba(200, 0, 0, 1);
+font-size: 25;
+font-family: "calibry", sans-serif;
+-webkit-transition: all 350ms ease-in-out;
+-webkit-transform: scale(1.1);
+box-shadow: none;
+}
+
+@-webkit-keyframes caseShake {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes caseShake {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+
+
+
+#home, #homeAfter, #cvcss, #cvcssAfter{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: blue;
+  opacity: 0.7;
+  font-family: 'BebasNeueRegular';
+  text-align: center;
+  visibility: visible;
+}
+
+#homeAfter, #cvcssAfter{
+  -webkit-transform: translateY(-1000px);
+  -webkit-transition: all 600ms ease-in-out;
+  visibility: hidden;
+}
+
+#cvcss, #cvcssAfter{
+  margin-left: 50%;
+  background-color: red;
+}
+
+#home h1, #homeAfter h1, #cvcss h1, #cvcssAfter h1{
+  font-size: 80;
+  line-height: 110%;
+  opacity: 1;
+  margin-top: 380px; 
+  visibility: visible;
+  color: white;
+}
